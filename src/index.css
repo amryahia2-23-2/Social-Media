@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@plugin '../hero.js';
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+
+
+body {
+    @apply bg-[#f0f2f5] text-gray-900;
+    font-family: 'Cairo', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Highlight animation for comments */
+@keyframes highlight {
+    0% {
+        background-color: rgba(59, 130, 246, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.highlight-comment {
+    animation: highlight 2s ease-in-out;
+    border-radius: 12px;
+}
+
+
+/* a {
+    @apply text-blue-600 hover:underline;
+} */
+
+/* button {
+    @apply rounded-lg;
+} */
+
+/* input,
+textarea {
+    @apply  rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-500; */
+/* } */
+
+/* Optional: Card Shadow for Social App UI */
+.card {
+    @apply bg-white rounded-xl shadow-xl;
+}
+
+/* Dark mode overrides for profile cards */
