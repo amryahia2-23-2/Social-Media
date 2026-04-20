@@ -18,7 +18,12 @@ export default function ProfileHeader({
     return (
         <div className="bg-white dark:bg-[#030637] rounded-3xl shadow-sm overflow-hidden relative dark:border dark:border-[#610094]/30">
             {/* Cover Photo */}
-            <div className="group h-48 bg-gradient-to-r from-[#2c3e50] via-[#34495e] to-[#5dade2] bg-center bg-cover relative" style={{ backgroundImage: `url(${profileData?.cover})` }}>
+            <div
+  className="group h-48 bg-gradient-to-r from-[#2c3e50] via-[#34495e] to-[#5dade2] bg-center bg-cover relative"
+  style={{
+    backgroundImage: profileData?.cover ? `url(${profileData.cover})` : undefined,
+  }}
+>
                 {/* Cover Buttons - Only for own profile */}
                 {isOwnProfile && (
                     <div className="opacity-0 group-hover:opacity-100 transition duration-300">

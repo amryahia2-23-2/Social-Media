@@ -11,8 +11,8 @@ export default function Login() {
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: zodResolver(loginSchema),
         defaultValues: {
-            email: "mohamed+22@gmail.com",
-            password: "Mohamed@1234",
+            email: "",
+            password: "",
         },
     });
     const navigate = useNavigate();
@@ -30,7 +30,7 @@ export default function Login() {
     return (
         <div>
             <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">
-                Log in to Route Social
+                Log in to Zentro Social
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-sm mt-1 mb-6">
                 Log in and continue your social journey.

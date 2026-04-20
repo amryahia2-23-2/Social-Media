@@ -24,9 +24,9 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link to="/home" className="flex items-center space-x-2">
                         <div className="w-8 h-8 bg-[#0d47a1] dark:bg-gradient-to-br dark:from-[#610094] dark:to-[#3F0071] rounded-lg flex items-center justify-center shadow-lg dark:shadow-[#610094]/50">
-                            <span className="text-white font-bold text-sm">RP</span>
+                            <span className="text-white font-bold text-sm">ZE</span>
                         </div>
-                        <h1 className="text-lg font-bold text-gray-900 dark:text-white hidden sm:block">Route Posts</h1>
+                        <h1 className="text-lg font-bold text-gray-900 dark:text-white hidden sm:block">Zentro</h1>
                     </Link>
 
                     {/* Center Navigation - Hidden on mobile */}

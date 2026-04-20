@@ -28,19 +28,6 @@ body {
 }
 
 
-/* a {
-    @apply text-blue-600 hover:underline;
-} */
-
-/* button {
-    @apply rounded-lg;
-} */
-
-/* input,
-textarea {
-    @apply  rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-500; */
-/* } */
-
 /* Optional: Card Shadow for Social App UI */
 .card {
     @apply bg-white rounded-xl shadow-xl;
